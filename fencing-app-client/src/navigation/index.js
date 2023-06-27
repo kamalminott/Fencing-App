@@ -8,6 +8,9 @@ import ConfirmEmailScreen from '../screens/ConfirmEmailScreen/ConfirmEmailScreen
 import ForgotPasswordScreen from '../screens/ForgotPasswordScreen/ForgotPasswordScreen';
 import ResetPasswordScreen from '../screens/ResetPasswordScreen/ResetPasswordScreen';
 import HomeScreen from "../screens/HomeScreen/HomeScreen";
+import PoulesScreen from "../screens/PoulesScreen/PoulesScreen";
+import DirectEliminationScreen from "../screens/DirectEliminationScreen/DirectEliminationScreen";
+import PoulesDirectEliminationScreen from "../screens/PoulesDirectEliminationScreen/PoulesDirectEliminationScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +26,9 @@ const Navigation = () => {
             <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen}/>
             <Stack.Screen name="ResetPassword" component={ResetPasswordScreen}/>
             <Stack.Screen name="Home" component={HomeScreen} />
+            <Stack.Screen name="Poules" component={PoulesScreen} />
+            <Stack.Screen name="DirectElimination" component={DirectEliminationScreen} />
+            <Stack.Screen name="PoulesDirectElimination"component={PoulesDirectEliminationScreen} />
             </Stack.Navigator>
 
         </NavigationContainer>
