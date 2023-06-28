@@ -15,9 +15,9 @@ const SignInScreen = () => {
     const onSignInPressed = () => {
         console.warn('Sign In')
         //validate user
-        navigation.navigate('Home');
+        navigation.navigate('UserProfile');
     }
-    
+
     const onSignUpPressed = () => {
         navigation.navigate('SignUp')
     }
@@ -40,51 +40,51 @@ const SignInScreen = () => {
     return(
         <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.root}>
-            <Image 
-                        source={Logo} 
-                        style={[styles.logo, {height: height * 0.3}]} 
+            <Image
+                        source={Logo}
+                        style={[styles.logo, {height: height * 0.3}]}
                         resizeMode="contain"
             />
-            <CustomInput 
-                        placeholder={"username"} 
-                        value={username} 
+            <CustomInput
+                        placeholder={"username"}
+                        value={username}
                         setValue={setUsername}
                         />
-            <CustomInput 
-                        placeholder={"password"} 
-                        value={password} 
-                        setValue={setPassword} 
+            <CustomInput
+                        placeholder={"password"}
+                        value={password}
+                        setValue={setPassword}
                         secureTextEntry
-                        /> 
-            <CustomButton 
+                        />
+            <CustomButton
                         text={'Sign In'}
                         onPress={onSignInPressed}
             />
-            <CustomButton 
-                        text={'Forgot Password?'} 
+            <CustomButton
+                        text={'Forgot Password?'}
                         onPress={onForgotPasswordPressed}
                         type="TERTIARY"
                         />
-            <CustomButton 
+            <CustomButton
                         text={'Sign In with Facebook'}
                         onPress={onSignInFacebook}
                         bgColor={"#E7EAF4"}
                         fgColor={"#4765A9"}
             />
-            <CustomButton 
+            <CustomButton
                         text={'Sign In with Google'}
                         onPress={onSignInGoogle}
                         bgColor={"#FAE9EA"}
                         fgColor={"#DD4D44"}
             />
-              <CustomButton 
+              <CustomButton
                         text={'Sign In with Apple'}
                         onPress={onSignInApple}
                         bgColor={"#e3e3e3"}
                         fgColor={"#363636"}
-            />          
-            <CustomButton 
-                        text={"Don't have an account? Create one"} 
+            />
+            <CustomButton
+                        text={"Don't have an account? Create one"}
                         onPress={onSignUpPressed}
                         type="TERTIARY"
                         />
