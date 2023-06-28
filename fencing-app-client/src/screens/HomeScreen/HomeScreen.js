@@ -1,11 +1,16 @@
 import React from "react";
 import { View, Text } from "react-native";
 import CustomButton from "../../components/CustomButton/CustomButton";
+import { useNavigation } from "@react-navigation/native";
+
+
 
 const HomeScreen = () => {
+    const navigation = useNavigation();
 
     const onScoringRemotePress = () => {
         console.warn('onScoringRemote')
+        navigation.navigate("ScoringRemote")
     }
 
 
