@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import CustomButton from "../../components/CustomButton/CustomButton";
 
-const HomeScreen = () => {
+const TrainingOptionsScreen = () => {
   const navigation = useNavigation();
 
     const onScoringRemotePress = () => {
@@ -28,7 +28,7 @@ const HomeScreen = () => {
 return(
 
     <View>
-    <Text>Home Screen</Text>
+    <Text>Training Options</Text>
     <CustomButton text={"Scoring Remote"} onPress={onScoringRemotePress}/>
     <CustomButton text={"Poules"} onPress={onPoulePress}/>
     <CustomButton text={"Direct Elimination"} onPress={onDirectEliminationPress}/>
@@ -37,4 +37,4 @@ return(
 )
 }
 
-export default HomeScreen
+export default TrainingOptionsScreen;
