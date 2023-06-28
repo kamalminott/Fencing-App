@@ -11,6 +11,8 @@ import HomeScreen from "../screens/HomeScreen/HomeScreen";
 import PoulesScreen from "../screens/PoulesScreen/PoulesScreen";
 import DirectEliminationScreen from "../screens/DirectEliminationScreen/DirectEliminationScreen";
 import PoulesDirectEliminationScreen from "../screens/PoulesDirectEliminationScreen/PoulesDirectEliminationScreen";
+import UserProfileScreen from "../screens/UserProfileScreen/UserProfileScreen";
+
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +31,7 @@ const Navigation = () => {
             <Stack.Screen name="Poules" component={PoulesScreen} />
             <Stack.Screen name="DirectElimination" component={DirectEliminationScreen} />
             <Stack.Screen name="PoulesDirectElimination"component={PoulesDirectEliminationScreen} />
+            <Stack.Screen name="UserProfile" component={UserProfileScreen} />
             </Stack.Navigator>
 
         </NavigationContainer>
