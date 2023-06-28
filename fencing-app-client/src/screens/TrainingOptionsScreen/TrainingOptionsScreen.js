@@ -8,6 +8,7 @@ const TrainingOptionsScreen = () => {
 
     const onScoringRemotePress = () => {
         console.warn('onScoringRemote')
+        navigation.navigate("ScoringRemote")
     }
 
     const onPoulePress = () => {
